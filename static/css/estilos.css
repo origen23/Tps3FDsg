@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+}   
+body{
+    /* background: rgb(230,230,230); */
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    
+}
+    
+.contenedor{
+    width: 100%;
+    max-width: 2080px; /*ancho máximo de la página*/
+    margin: 0px 0px 0px 0px; /*auto permite centrar nuestra página en forma horizontal*/
+    display: grid;
+    gap: 00px; /*nos ahorramos tener que poner márgenes entre los elementos*/
+
+    /*3 columnas: contenido (con 2 widgets) + sidebar*/
+    grid-template-columns: repeat(4,1fr);
+
+    /*4 filas: header, contenido, widgets, footer*/
+    /* grid-template-rows: repeat(5, auto); */
+    grid-template-rows: 30% 15% 1% 10% 10% auto 10%;
+
+    grid-template-areas: "logo logo logo logo"
+                         "encabezado encabezado encabezado encabezado"                     
+                         "linea linea linea linea"
+                         "libre libre libre libre"
+                         "libre libre libre libre" 
+                         "rocha1 contenido contenido rocha2"
+                         "pie pie pie pie";
+}
+
+
+
+.contenedor > div,
+.contenedor .logo,
+.contenedor .linea,
+.contenedor .libre,
+.contenedor .encabezado,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .pie {
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.contenedor .logo{
+    background: #fff ;
+    color: #fff;
+    grid-area: logo; 
+    justify-content: center;
+    
+}
+
+.contenedor .linea{
+    background: #e90505 ;
+    color: #fff;
+    grid-area: linea; 
+}
+.contenedor .libre{
+    grid-area: libre; 
+}
+.contenedor .encabezado{
+    background:  #fff   ;
+    color: #fff;
+    grid-area: encabezado; 
+}
+
+.contenedor .contenido{
+    /* background: #fff; */
+    grid-area: contenido; 
+}
+
+.contenedor .sidebar{
+    background: orange;
+    /*utilizamos flexbox para alinear el contenido*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: sidebar; 
+}
+
+.contenedor .widget-1,
+.contenedor .widget-2{
+    background: lightskyblue;
+    color: #000;
+    height: 100px;
+    /*utilizamos flexbox para alinear el contenido*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .widget-1{
+    grid-area: widget-1; 
+}
+
+.contenedor .widget-2{
+    grid-area: widget-2; 
+}
+
+.contenedor .pie{
+    background: darkblue;
+    color: #fff;
+    grid-area: pie; 
+}
+
+
+
+@media screen and (max-width: 768px){
+    .contenedor{
+        grid-template-areas: "logo logo logo logo"
+                         "encabezado encabezado encabezado encabezado"                     
+                         "linea linea linea linea"
+                         "libre libre libre libre"
+                         "libre libre libre libre" 
+                         "rocha1 contenido contenido rocha2"
+                         "pie pie pie pie";
+        
+    }
+}
+
+@media screen and (max-width: 450px){
+    .contenedor{
+        grid-template-areas: "logo"
+                             "encabezado"
+                             "libre"
+                             "libre"
+                             "libre"
+                             "libre"                             
+                             "pie";
+    }
+}
+
+#fondo{
+    
+    min-height: 100vh;
+    background: url(../img/globos03.jpg) fixed ;
+    background-size: cover;
+    
+}
+
+#logomaq{
+    
+    /* align-items: center; */
+    justify-content: center;    
+    height: 15%;
+    width: 15%;
+    min-height: 5vh;
+    background-size: cover;
+    align-items: left;
+    /* min-height: 100vh; */
+    /* background-size: cover; */
+    
+}
+
+.contenedorx{
+    width: 90%;
+    max-width: 1000px; /*ancho máximo de la página*/
+    margin: 20px auto; /*auto permite centrar nuestra página en forma horizontal*/
+    display: grid;
+    gap: 20px; /*nos ahorramos tener que poner márgenes entre los elementos*/
+
+    /*3 columnas: contenido (con 2 widgets) + sidebar*/
+    grid-template-columns: repeat(3,1fr);
+
+    /*4 filas: header, contenido, widgets, footer*/
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas: "encabezado encabezado encabezado"
+                         "contenido contenido sidebar"
+                         "widget-1 widget-2 sidebar"
+                         "pie pie pie";
+}
