@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    
+}   
+
+#fondo{
+    
+    min-height: 100vh;
+    background: url(../img/en01.jpg) fixed ;
+    background-size: cover;
+    
+}
+
+#logomaq{
+       
+    
+    height: 25%;
+    width: 25%;
+    min-height: 5vh;
+    background-size: cover;
+    align-items: center;
+    
+        
+    
+}
+
