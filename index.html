@@ -1,57 +1,388 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./static/css/estilos.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-  <title>Eventos</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events Fiestas</title>
+
+  <!--CSS Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
 
-<body id="fondo">
+<body>
 
-  <div class="contenedor">
-    <header class="logo">
+  <!-- Navbar -->
+  <nav>
+    <img src="./assets/img/eventosLF.png" alt="" />
+
+    <ul class="navigation">
+      <li><a href="#homep" class="nav-link">Home</a></li>
+      <li><a href="#armatuf" class="nav-link">Armá tu fiesta</a></li>
+      <li><a href="#galeria" class="nav-link">Galería</a></li>
+      <li><a href="#consulta" class="nav-link">Contacto</a></li>
+    </ul>
+
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+
+  </nav>
+
+  <section id="fondo">
+    <section class="homep" id="homep">
       <div>
-        <img src="./static/img/eventosLF.png" id="logomaq">
+        <div class="bio animate__animated animate__shakeX">
+          <h1 class="animated-shadow"><br><br> ¡Para tu fiesta lo mejor! </h1>
+          <p class="texto02">
+            <br><br>
+            Bodas, Cumpleaños, Baby Shower <br><br>
+            Ceremonias, Agasajos, Aniversarios <br><br>
+            Fiesta de 15 años, Despedida de solteras/os <br><br><br><br><br><br>
+          </p>
+        </div>
       </div>
-    </header>
-    
-    <header class="linea">
-
-    </header>
-    <nav>
-
-        <ul class="encabezado">
-          
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.html"> Home </a></li>
-          <li class="nav-item"><a class="nav-link" href="./templates/salones.html"> Nuestros salones </a></li>
-          <li class="nav-item"><a class="nav-link" href="./templates/afiesta.html"> Agregá a tu fiesta </a></li>
-          <li class="nav-item"><a class="nav-link" href="./templates/galeria.html"> Galería </a></li>
-          <li class="nav-item"><a class="nav-link text-success" href="./templates/contacto.html"> Contactanos </a></li>
-        </ul>
-
-    </nav>
-
-    
-    <header class="libre">
-      <h2> </h2>
-    </header>
-    <main class="contenido">
-      <br>
-      <p class="texto01">¡ Hacemos que tu evento sea de ensueño !</p>
-      <br><br>
-      <p class="texto02">. Cumpleaños, 15 años, casamientos ... <br><br>
-        . Agasajos, reuniones familiares, aniversarios ... <br><br>
-        . Celebraciones empresariales, ceremonias ...
-        <br><br>
-      </p>
-    </main>
+    </section>
 
 
+    <!-- arma section -->
+    <div id="armatuf">
+
+    </div>
+
+
+    <div>
+      <p class="texto03"><br><br><br>¡¡¡ Agrega<br> + Diversión !!!<br>Te ofrecemos ....<br><br> </p>
+    </div>
+
+    <section class="arma">
+
+      <img src="assets/img/payaso.webp" alt="Cucharita" loading="lazy" class="arma-img" />
+      <div class="bio2 animate__animated animate__shakeX">
+        <h1 class="bio2-titulo">Payaso Cucharita</h1>
+        <p class="bio2-texto">
+          Para cumpleaños infantiles
+          la mejor animación será con
+          el payaso Cucharita.
+          Incluye juegos, premios
+          y toda la alegría !!!
+        </p>
+      </div>
+    </section>
+
+
+    <p class="texto03"><br></p>
+
+    <section class="arma">
+      <!-- <section class="arma" -->
+
+      <div class="bio2 animate__animated animate__shakeX">
+        <h1 class="bio2-titulo">Juegos infantiles</h1>
+        <p class="bio2-texto">
+          ¡¡¡ Todo diversión !!!
+          Juegos muy divertidos para los niños
+          Peloteros
+          Metegol
+          Tobogán
+          Mesa de Ping-Pong
+          y otros juegos recreativos
+          para que Ello lo pase GENIAL ...
+        </p>
+      </div>
+      <img src="assets/img/Pelotero01.jpg" alt="Pelotero" loading="lazy" class="arma-img2" />
+    </section>
+
+    <p class="texto03"><br></p>
+    <section class="arma">
+
+      <img src="assets/img/fotocabina2.jpg" alt="fotos" loading="lazy" class="arma-img2" />
+      <div class="bio2 animate__animated animate__shakeX">
+        <h1 class="bio2-titulo">Cabina fotográfica</h1>
+        <p class="bio2-texto">
+          Captura tu alegría en el momento !!!
+          Accesorios para una foto ideal.
+          Tus invitados se llevarán un recuerdo inolvidable.
+
+        </p>
+      </div>
+    </section>
+
+    <p class="texto03"><br></p>
+    <section class="arma">
+
+      <div class="bio2 animate__animated animate__shakeX">
+        <h1 class="bio2-titulo">Fotos y Videos</h1>
+        <p class="bio2-texto">
+          Capturamos los mejores momentos ... !!!
+          Videos y fotos para recordar siempre.
+          Los mejores recuerdos a nivel profesional.
+
+        </p>
+      </div>
+      <img src="assets/img/videoyfoto.webp" alt="¡ Musica DJ !" loading="lazy" class="arma-img" />
+
+    </section>
+
+    <p class="texto03"><br></p>
+    <section class="arma">
+
+      <img src="assets/img/Dj04.webp" alt="¡ Musica DJ !" loading="lazy" class="arma-img" />
+      <div class="bio2 animate__animated animate__shakeX">
+        <h1 class="bio2-titulo">¡ Musica DJ !</h1>
+        <p class="bio2-texto">
+          La mejor música para tu fiesta
+          Todos los ritmos para todas las edades
+          Alegrá tu fiesta con el mejor DJ
+          ¡ A bailar ... !
+
+        </p>
+      </div>
+    </section>
+
+    <p class="texto03"><br></p>
+    <section class="arma">
+
+
+      <div class="bio2 animate__animated animate__shakeX">
+        <h1 class="bio2-titulo">¡ A festejar como un Rey !</h1>
+        <p class="bio2-texto">
+          Ponemos a tu disposición
+          la mejor y más rica variedad en Catering
+          para fiestas.
+          Tenemos el menú adecuado para cada festejo.
+          Dejate cautivar por nuestra
+          exquisita comida salada, mesa dulce, tortas y bedidas ...
+
+        </p>
+      </div>
+      <img src="assets/img/Catering01.jpg" alt="¡ A festejar como un Rey !" loading="lazy" class="arma-img" />
+    </section>
+
+    <p class="texto03"><br></p>
+
+    <section class="arma">
+
+      <img src="assets/img/Deco04.jpg" alt="¡ Decoración !" loading="lazy" class="arma-img" />
+      <div class="bio2 animate__animated animate__shakeX">
+        <h1 class="bio2-titulo">¡ Ambientación y Deco !</h1>
+        <p class="bio2-texto">
+          Ambientamos y decoramos tu fiesta.
+          Nuestros decoradores harán realidad tu sueño.
+          Todos los estilos ...
+          Proveemos también la vajilla, cubiertos, mantelería, sillas, etc.
+          No te preocupes por nada, solo por festejar ...
+
+        </p>
+      </div>
+    </section>
+    <p class="texto03"><br></p>
+  </section>
+  </section>
+
+  <!-- Galeria -->
+
+  <section id="galeria">
+    <section id="fondo2">
+
+      <p class="texto03"><br><br><br>¡ Así organizamos tu fiesta !<br></p>
+      <!-- <p class="texto01"><br><br><br>Galería de imágenes<br></p> -->
+      <p class="texto03"><br>Cumpleaños infantiles...<br><br> </p>
+      <section class="baraja">
+        <article>
+          <section>
+
+            <img src="./assets/img/inf01.jpg" alt="">
+            <img src="./assets/img/inf02.jpg" alt="">
+            <img src="./assets/img/inf03.jpg" alt="">
+            <img src="./assets/img/inf04.jpg" alt="">
+            <img src="./assets/img/inf05.jpg" alt="">
+            <img src="./assets/img/inf06.jpg" alt="">
+            <img src="./assets/img/inf07.jpg" alt="">
+            <img src="./assets/img/inf08.jpg" alt="">
+            <img src="./assets/img/inf09.jpg" alt="">
+          </section>
+        </article>
+      </section>
+
+
+      <section>
+        <p class="texto03"><br></p>
+        <p class="texto03"><br><br>Casamientos...<br><br> </p>
+        <section class="baraja">
+          <article>
+            <section>
+              <img src="./assets/img/boda01.png" alt="">
+              <img src="./assets/img/boda02.jpg" alt="">
+              <img src="./assets/img/boda03.jpg" alt="">
+              <img src="./assets/img/boda04.webp" alt="">
+              <img src="./assets/img/boda05.jpg" alt="">
+              <img src="./assets/img/boda06.jpeg" alt="">
+              <img src="./assets/img/boda07.webp" alt="">
+              <img src="./assets/img/boda08.jpg" alt="">
+              <img src="./assets/img/boda09.jpeg" alt="">
+            </section>
+          </article>
+        </section>
+      </section>
+
+      <section>
+        <p class="texto03"><br></p>
+        <p class="texto03"><br><br>15 años...<br><br> </p>
+        <section class="baraja">
+          <article>
+            <section>
+              <img src="./assets/img/quince01.jpg" alt="">
+              <img src="./assets/img/quince02.jpg" alt="">
+              <img src="./assets/img/quince03.webp" alt="">
+              <img src="./assets/img/quince04.jpg" alt="">
+              <img src="./assets/img/quince05.jpg" alt="">
+              <img src="./assets/img/quince06.jpg" alt="">
+              <img src="./assets/img/quince07.jpg" alt="">
+              <img src="./assets/img/quince08.jpg" alt="">
+              <img src="./assets/img/quince09.jpg" alt="">
+            </section>
+          </article>
+        </section>
+      </section>
+
+      <section>
+        <p class="texto03"><br></p>
+        <p class="texto03"><br><br>Baby Shower...<br><br> </p>
+        <section class="baraja">
+          <article>
+            <section>
+              <img src="./assets/img/baby01.jpg" alt="">
+              <img src="./assets/img/baby02.jpg" alt="">
+              <img src="./assets/img/baby03.jpg" alt="">
+              <img src="./assets/img/baby04.jpg" alt="">
+              <img src="./assets/img/baby05.jpg" alt="">
+              <img src="./assets/img/baby06.jpg" alt="">
+              <img src="./assets/img/baby07.jpg" alt="">
+              <img src="./assets/img/baby08.webp" alt="">
+              <img src="./assets/img/baby09.jpg" alt="">
+            </section>
+          </article>
+        </section>
+      </section>
+
+      <section>
+        <p class="texto03"><br></p>
+        <p class="texto03"><br><br>Despedida de soltera/o...<br><br> </p>
+        <section class="baraja">
+          <article>
+            <section>
+              <img src="./assets/img/despe01.jpeg" alt="">
+              <img src="./assets/img/despe02.jpg" alt="">
+              <img src="./assets/img/despe03.jpg" alt="">
+              <img src="./assets/img/despe04.jpg" alt="">
+              <img src="./assets/img/despe05.jpg" alt="">
+              <img src="./assets/img/despe06.jpg" alt="">
+              <img src="./assets/img/despe07.webp" alt="">
+              <img src="./assets/img/despe08.jpg" alt="">
+              <img src="./assets/img/despe09.jpg" alt="">
+            </section>
+          </article>
+        </section>
+        <p class="texto03"><br><br></p>
+      </section>
+
+
+    </section>
+  </section>
+
+
+  <!-- Contacto section -->
+  <section id="consulta">
+    <p class="texto03"><br><br>¡ Contanos de tu evento !<br> </p>
+    <section class="form-consulta">
+
+      <form id="formConsulta" method="POST" novalidate action="#">
+        <h2>Contacto...</h2>
+
+        <fieldset class="form-control">
+          <input placeholder="Nombre:" type="text" name="namet" id="namet" maxlength="25">
+        </fieldset>
+        <span class="error" id="error-namet"></span>
+
+        <fieldset class="form-control">
+          <input placeholder="Email:" type="email" name="email" id="email">
+        </fieldset>
+        <span class="error" id="error-email"></span>
+
+        <fieldset class="form-control">
+          <input placeholder="Teléfono:" type="text" name="telefono" id="telefono" maxlength="15">
+        </fieldset>
+        <span class="error" id="error-telefono"></span>
+
+        <fieldset class="form-control">
+          <label for="tipof" style="top: 20%;">Tipo de evento:</label>
+          <select name="tipof" id="tipof" class="form-select">
+            <option value=""></option>
+            <option value="CI">Cumple infantil</option>
+            <option value="15">15 años</option>
+            <option value="CS">Casamientos</option>
+            <option value="BS">Baby Shower</option>
+            <option value="DE">Despedida</option>
+            <option value="OT">Otro</option>
+          </select>
+        </fieldset>
+        <span class="error" id="error-tipof"></span>
+
+        <fieldset class="form-control">
+          <label id="label-birthday" for="birthdate" style="top:20%;">Fecha del evento:</label>
+          <input type="date" name="birthdate" id="birthdate">
+        </fieldset>
+        <span class="error" id="error-birthdate"></span>
+
+        <fieldset class="form-control">
+          <input placeholder="Contanos de tu fiesta:" type="text" name="contanos" id="contanos" maxlength="300">
+        </fieldset>
+        <span class="error" id="error-contanos"></span>
+
+        <button type="submit"> Enviar...</button>
+
+      </form>
+      <!-- </section> -->
+
+
+    </section>
+  </section>
+
+  <!-- Social accounts - Fixed to the right -->
+  <div class="sociales">
+    <a href="https://x.com/iniciarsesion?lang=es" target="_blank"><img src="assets/icons/icons8-twitter-circled.gif"
+        alt="Twitter" loading="lazy" class="socicon" /></a>
+    <a href="https://www.instagram.com/" target="_blank"><img src="assets/icons/icons8-instagram.gif" alt="Instagram"
+        loading="lazy" class="socicon" /></a>
+    <a href="https://ar.linkedin.com/" target="_blank"><img src="assets/icons/icons8-linkedin-circled.gif"
+        alt="Linkedin" loading="lazy" class="socicon" /></a>
+    <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img src="assets/icons/icons8-facebook.gif"
+        alt="Facebook" class="socicon"></a>
   </div>
+
+  <!-- Scroll to top -->
+  <i class="desplazarse-hacia-arriba" id="desplazarse-hacia-arriba"><img src="assets/icons/icons8-upward-arrow.gif"
+      class="socicon up-arrow" alt="desplazarse-hacia-arriba" /></i>
+
+  <!-- Footer section -->
+  <footer>
+    <p class="copy">&copy; Copyright 2024</p>
+    <p class="copy">
+      Desarrollado por :
+      <a href="https://twitter.com/smo" target="_blank">Sergio Marcelo Ortega</a>
+    </p>
+  </footer>
+
+  <!-- Website scripts -->
+  <script src="assets/js/app.js"></script>
+ 
+
 </body>
 
 </html>
